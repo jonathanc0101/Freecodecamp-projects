@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 
+:root{
+    --card-shadow: 0 .2vw .4vw 0 rgba(0, 0, 0, 0.2), 0 .3vw .8vw 0 rgba(0, 0, 0, 0.19);
+}
+
 html{
     background: radial-gradient(#e66465, #a74848);   
     color: #180404;
@@ -15,23 +19,33 @@ body{
 
 #main{
     background: whitesmoke;
-    border-radius: 1%;    
+    border-radius: 10px;    
     
     width: 80%;
     display: block;
     margin: auto auto auto auto;
+
+    box-shadow: var(--card-shadow);
 }
 
-#img-div{
-    border-radius: 5%;
-}
-#image{
-    border-radius: 5%;
-    padding: 1rem 1rem 1rem 1rem;   
-    
+figure{
     width: 70%;
+    margin: auto auto;
+
+    box-shadow: var(--card-shadow);
+}
+
+figcaption{
+    padding: 1%;
+}
+
+#image{
     display: block;
-    margin: auto auto auto auto;
+    width: 100%;
+    height: auto;
+    
+    max-width: 100%;
+
 }
 
 #img-caption{
@@ -52,7 +66,7 @@ h1{
 p,h2,li,a {
     max-width: 70%;
     margin: auto auto auto auto;
-    padding: repeat(4,  1rem );   
+    padding: 1%;   
 
     line-height: 2.5rem;
 }
