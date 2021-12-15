@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+html{
+    background: radial-gradient(#e66465, #a74848);   
+    color: #180404;
+    font-size: 20px;
+}
+
+body{  
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    
+}
+
+#main{
+    background: whitesmoke;
+    border-radius: 1%;    
+    
+    width: 80%;
+    display: block;
+    margin: auto auto auto auto;
+}
+
+#img-div{
+    border-radius: 5%;
+}
+#image{
+    border-radius: 5%;
+    padding: 1rem 1rem 1rem 1rem;   
+    
+    width: 70%;
+    display: block;
+    margin: auto auto auto auto;
+}
+
+#img-caption{
+    width:70%;
+
+    font-size: .9rem;
+    margin: auto auto auto auto;
+}
+
+ul{
+    text-align: left;
+}
+
+h1{
+    padding-top: 7%;
+}
+
+p,h2,li,a {
+    max-width: 70%;
+    margin: auto auto auto auto;
+    padding: repeat(4,  1rem );   
+
+    line-height: 2.5rem;
+}
+
+.quote{
+    font-size: .9rem;
+    font-style: italic;
+}
+.quotesignature{
+    font-size: .7rem;
+    font-weight: 800;
+}

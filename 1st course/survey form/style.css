@@ -1,0 +1,72 @@
+body {
+    background: whitesmoke;
+  }
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;  
+}
+
+
+.title{
+    background:cornflowerblue;
+    color:white;
+    padding: 5%;
+}
+
+.form{
+    background:white;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 3%;
+}
+legend{
+    text-align: center;
+}
+
+fieldset label,.checkboxes label{
+    display: block;
+    width: 98%;
+    text-align: center;
+}
+
+.checkboxes{
+    width: 98%;
+    border:1px solid black;
+    margin-bottom:0.5em;
+}
+.checkboxes p{
+    text-align: center;
+    font-weight:bold;
+}
+
+select:focus,input:focus,textarea:focus{
+    outline: 3px solid cornflowerblue;
+}
+input,select,textarea,button,fieldset{
+    border: 1px solid #000;
+    padding: 1rem 0rem 1rem 1rem;
+    margin-bottom:1rem;
+    width: 95%;
+  }
+
+
+button:hover, button:focus {
+    background:cornflowerblue;
+    outline: 0;
+}
+button{
+    background: lightgray;
+    border:0;
+    width: 98%;
+}
