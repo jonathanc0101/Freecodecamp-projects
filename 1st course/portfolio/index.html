@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st web resume</title>
 
+    
+    <script src="libraries/p5.js"></script>
     <link rel="stylesheet" href="style.css">    
 </head>
 
@@ -13,106 +15,150 @@
     
     <nav id="navbar">
         <ul>
-            <li><a href="#product-page">product-page</a></li>
-            <li><a href="#form">form</a></li>
-            <li><a href="#tribute">tribute</a></li>
-            <li><a href="#article">article</a></li>
-            
+            <li><a href="#welcome-section">Welcome section</a></li>
+            <li><a href="#web-section">Web Projects</a></li>
+            <li><a href="#desktop-section">Desktop projects</a></li>
+            <li class="contact-link"><a href="#contact-section" >Contact me</a></li>
         </ul>
+
     </nav>  
-    
+
+    <!-- uncomment -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
     <header>
-        <div id="welcome-section">
-            <h1>Welcome</h1>    
+        <div id="welcome-section">  
+            <!-- uncomment -->
+                <div id="p5-sketch">
+                    <script src="seleccion.js"></script>
+                </div>
+               
+
+            <div class="text-section">
+
+                <h1>Hello!</h1>
+                <h2 class="welcome-header">Welcome to my portfolio of projects</h2>    
+                
+                <p>
+                    Some of the projects presented here I made during 
+                    year of 2020.
+                </p>
+                
+                <p>If you want to see any project and maybe the code behind it, feel free to click on any image and get redirected to the page in question or to the github that contains the code.</p>
+            </div>   
             
-            <p>
-                All the projects presented here I made during 
-                the <a href="https://www.freecodecamp.org/learn/responsive-web-design" target="_blank">responsive web design course</a>.
-            </p>
+        </div>
+        
+    </header>
+   
+    
+    <main id="article-section">
+        <section class="introduction">
+            <div class="quote-container">
+                <p class="text">“Good artists borrow, great artists steal.”</h2>
+                <p class="author">-Pablo Picasso (maybe)</p>
+            </div>
+                
+        </section>
+        
+        <div class="text-section">
             
+            <h2>Introduction</h2>
             <p>
-                The course is a <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a> course encompassing the concepts of HTML, CSS, and basic static web design and basic web development.
+                If the quote is true, then all programmers are great artists. We live in an age of stackoverflow and copy-paste. Altough this wasn't copy paste per se, I did not come up with any of the building blocks that made this website, that's the work of much, much smarter people than me. The people that invented HTML, CSS, javascript, etc. I just made the blocks fit in a way that looked nice to me.
             </p>
             
         </div>
 
-    </header>
-        
-    <main id="article-section">
-            
-        <div class="article-container">
-    
+        <div id="web-section">
+
+            <div class="text-section">
+                <h2>Web projects</h2>
+            </div>
+
             <article id="projects">
                 <section class="project-tile" id="product-page">
 
-                    <div class="quote-container">
-
-                        <h2>“Good artists borrow, great artists steal.”</h2>
-                        <p>-Pablo Picasso (probably)</p>
-                    </div>
-
-                    <p>
-                        That's the 2010's and onwards programmers lema, we live in an age of stackoverflow and copy-paste. Altough this wasn't copy paste per se, I did not come up with any of the building blocks that made this website, that's the work of much, much smarter people than me. I just made the blocks fit in a way that looked nice to me.
-                    </p>
-
-                    <p>
-                        It really helped me to get in the mindset that I was an employee of that company(even tough I was not). I even probably broke a few laws linking to their images and stealing the whole concept of the product.
-                    </p>
+                    <h3>The product landing page</h3>
+                    <p>This is an example of product page, let's not think about the fact that the product and the company already exists and I have nothing to do with them.</p>
                         
-                    <a href="https://codepen.io/jonathanc0101/pen/yLzVPbY">
-
-                        <img src="" alt="image of the page">
-                        This was my first "product page"
+                    <a href="https://codepen.io/jonathanc0101/pen/yLzVPbY" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/jonathanc0101/Freecodecamp-projects/master/1st%20course/images/product%20landing%20page.PNG" alt="image of the page">
                     </a>
 
                 </section>
     
                 <section class="project-tile" id="form">
                     
-                    <h2>"Eye opening"</h2>
+                    <h3>First web form<h3>
                     <p>This is my first web form, discovering the powerful aspect of padding in an input opened my eyes. It sounds funny but it's true, before doing this all I could imagine when i tought of an user interface in a form was some old grey-looking Windows form from the early 2000's.</p>
 
-                    <a href="https://codepen.io/jonathanc0101/pen/QWqKQKZ">My first form</a>
+                    <a href="https://codepen.io/jonathanc0101/pen/QWqKQKZ" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/jonathanc0101/Freecodecamp-projects/master/1st%20course/images/survey%20form.PNG" alt="image of the page"></a>
 
                 </section>
     
                 <section class="project-tile" id="tribute">
                     
-                    <h2>The Julius Caesar "tribute"</h2>
+                    <h3>The Julius Caesar "tribute"</h3>
                     <p>It's not really a tribute, I say some facts that do not leave his image pristine to say the least. I also say that he was a product of his time, make of this what you will.</p>
 
-                    <a href="https://codepen.io/jonathanc0101/pen/bGowdaO">
-                        <img src="" alt="image of the page">
-                        This was my first critique/tribute</a>
+                    <a href="https://codepen.io/jonathanc0101/pen/bGowdaO" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/jonathanc0101/Freecodecamp-projects/master/1st%20course/images/tribute.PNG" alt="image of the page">
+                        </a>
 
                 </section>
     
                 <section class="project-tile" id="article">
                     
-                    <h2></h2>
-                    <p></p>
+                    <h3>The article</h3>
+                    <p>Sometimes I have problems falling asleep, this is the way that I chose to deal with that. Writing whatever keeps me up at night.</p>
 
-                    <a href="https://codepen.io/jonathanc0101/pen/dyVOEoo">
-                        <img src="" alt="image of the page">
-                        My first article</a>
+                    <a href="https://codepen.io/jonathanc0101/pen/dyVOEoo" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/jonathanc0101/Freecodecamp-projects/master/1st%20course/images/article.PNG" alt="image of the page">
+                        </a>
 
                 </section>
     
             </article>
     
         </div>
+
+        <div id="desktop-section">
+
+            <div class="text-section">
+                <h2>Desktop projects</h2>
+            </div>
+
+            <article id="desktop-projects">
+                <section class="project-tile" id="turing-machine-simulator">
+                    <h3>This is a Turing machine simulator. The simplest computer that you could think of, this simulates it.</h3>
+                    <p>It's entirely written in Python and the UI is made using the library Tkinter.</p>
+                    <p>I made it during my fundaments of computer science class during fall of 2020.</p>
+
+                    <a href="https://github.com/jonathanc0101/FTI--entregable-final-maquina-de-turing" target="_blank" rel="noopener noreferrer"><img src="https://github.com/jonathanc0101/FTI--entregable-final-maquina-de-turing/blob/imagenes-y-clutter/imagenes/interfaz%202021%2011%2024.PNG?raw=true" alt="image of the program"></a>
+                </section>
+
+                <section class="project-tile" id="government-program">
+                    <h3>Program for social assistance.</h3>
+                    <p>This program was made entirely free for the Chubut government in Argentina. It's written in an ancient language called VB.NET.</p>
+                    <a href="https://github.com/jonathanc0101/accionSocial" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/jonathanc0101/accionSocial/imagenesYclutter/imagenes/GrupoConviviente.PNG" alt="image of the program"></a>
+                </section>
+
+            </article>
+
+        </div>
         
     </main>
     
 
-    <div class="contact-container">
-        <a href="https://github.com/jonathanc0101/" target="_blank" id="profile-link" >Github</a>
+    <div class="contact-container" id="contact-section">
+        <a href="https://github.com/jonathanc0101/" target="_blank" rel="noopener noreferrer" id="profile-link" >Github</a>
         
         <a href="https://www.linkedin.com/in/jonathan-cavia-6a341a151/" >Linkedin</a>
     </div>
-
+    
 </body>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
