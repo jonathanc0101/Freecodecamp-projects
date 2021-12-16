@@ -9,6 +9,7 @@
     --light-contrast-color: #f64c72;
     --support-color-dark: #553d67;
     --support-color-light: #99738e;
+    --darker-contrast-color: #161616;
     /* color palette */
     
     --card-shadow: 0 .2vw .4vw 0 rgba(246, 76, 114, 0.2), 0 .3vw .8vw 0 rgba(246, 76, 114, 0.19);
@@ -79,11 +80,6 @@ li a{
     display: block;
     color: whitesmoke;    
 }
-nav ul li{
-    padding-left: 4%;
-    padding-right: 4%;
-
-}
 
 nav ul li:hover {
     background-color: var(--light-contrast-color);
@@ -93,6 +89,7 @@ nav ul li:hover {
     flex-grow: 1;
 }
 .contact-link a{
+    text-align: center;
     color:var(--light-contrast-color);
 }
 
@@ -146,7 +143,6 @@ h2{
 
 /* quote */
 
-
 body{
     padding-top:var(--height-nav);
 }
@@ -157,7 +153,11 @@ body{
     height: 100vh;
     box-shadow: var(--card-shadow);
     
-    margin:1.2%
+    background: linear-gradient(180deg, var(--background-color) 50%, var(--light-contrast-color) 80%);
+
+    margin:1.2%;
+    margin-right: 0;    
+    margin-left: 0;    
 }
 
 /* welcome */
@@ -188,23 +188,21 @@ article > *{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
-    
-    display: flex;
-    flex-direction: column;
-    
+        
     box-shadow: var(--dark-shadow);
-
     background-color: var(--dark-contrast-color);
-    box-sizing:var(--card-shadow);
 }
 
-.project-tile > *{
-    flex:1;
-}
 .project-tile h3, .project-tile p{
     padding-left: var(--padding-left-right);
     padding-right: var(--padding-left-right);
 
+}
+
+.project-tile h3{
+    padding: 2%;
+
+    background: var(--darker-contrast-color);
 }
 
 img{
@@ -215,3 +213,36 @@ img{
 }
 
 /* project tile */
+
+/* contact section */
+.contact-container{
+    color: var(--darker-contrast-color);
+    background: var(--light-contrast-color);
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    height: 75vh;
+
+    margin: auto auto;
+    margin-top: 2%;
+    padding:3%;
+
+    box-shadow: var(--card-shadow);
+}
+
+.contact-container > *{
+    display: block;
+    margin:auto auto;
+}
+
+.contact-container h3{
+    padding: 3%;
+}
+
+.contact-container svg{
+    padding: 3%;
+    margin: 3%;
+}
+
+/* contact section */
